@@ -162,15 +162,10 @@ We are a team of 3 dedicated engineers.
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -211,15 +206,10 @@ Chonkie (not to be confused with the company name) is an open-source library for
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -259,15 +249,10 @@ viz(chunks)
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -314,15 +299,10 @@ The `QdrantHandshake` handles all the complexity:
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -392,15 +372,10 @@ Also check out these awesome resources:
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -439,15 +414,10 @@ chunks = chunker.chunk(table)
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -516,15 +486,10 @@ print(results)
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -587,15 +552,10 @@ Chonkie has seen incredible adoption since launch
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -661,15 +621,10 @@ print(f"✓ {response.usage.tokens} tokens")
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -734,15 +689,10 @@ print(f"Total chunks: {len(chunks)}")
 
 <style>
 h1 {
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
 .slidev-layout {
@@ -788,14 +738,9 @@ class: text-center
 <style>
 h1 {
   font-size: 5rem !important;
-  background-color: #FFD700;
-  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
-  background-size: 100%;
+  background: linear-gradient(45deg, #FF9800, #F44336);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
-  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
+  text-shadow: 0 0 30px rgba(255, 152, 0, 0.6);
 }
 </style>
