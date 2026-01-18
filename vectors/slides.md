@@ -412,6 +412,53 @@ h1 {
 transition: slide-up
 layout: two-cols
 layoutClass: 'gap-16'
+--- 
+
+# Tables and Chunking
+
+```python
+from chonkie import TableChunker
+
+table = """
+| Name   | Age | City     |
+|--------|-----|----------|
+| Alice  | 30  | New York |
+| Bob    | 25  | London   |
+| Carol  | 28  | Paris    |
+| Dave   | 35  | Berlin   |
+"""
+
+chunker = TableChunker(tokenizer="row", chunk_size=3)
+chunks = chunker.chunk(table)
+```
+
+
+::right::
+
+<img src="/chonkie_fixed.gif" class="w-full rounded-lg shadow-xl" />
+
+<style>
+h1 {
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
+}
+</style>
+
+---
+transition: slide-up
+layout: two-cols
+layoutClass: 'gap-16'
 ---
 
 # Our Growth Journey
