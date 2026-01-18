@@ -3,7 +3,7 @@ theme: seriph
 background: https://github.com/not-lain/slides/blob/main/vectors/public/orbit.png?raw=true
 title: Welcome to Slidev
 info: |
-  ## Chonkie and qdrant
+  ## Chonkie and Qdrant
   Vector Search and Python Runner.
 
   Learn more at [chonkie.ai](https://chonkie.ai)
@@ -60,7 +60,7 @@ duration: 20min
   class="text-xl mt-4"
 >
 
-Building RAG pipelines with chonkie
+Building RAG pipelines with Chonkie
 
 </div>
 
@@ -72,7 +72,7 @@ Building RAG pipelines with chonkie
   class="mt-12 py-1"
   hover:bg="white op-10"
 >
-  Start chonking ... <carbon:arrow-right />
+  Start Chonking ... <carbon:arrow-right />
 </div>
 
 <div
@@ -184,17 +184,17 @@ level: 2
 layout: two-cols
 ---
 
-# chonkie
+# Chonkie
 
-chonkie (not to be confused with Chonkie the company name) is an open-source library for building RAG pipelines easily.
+Chonkie (not to be confused with the company name) is an open-source library for building RAG pipelines easily.
 
 <div class="mt-8">
 
-## Why chonkie?
+## Why Chonkie?
 
 <v-clicks>
 
-- 🚀 **Easy Integration**- Works seamlessly with popular vector databases
+- 🚀 **Easy Integration** - Works seamlessly with popular vector databases
 - 📦 **Simple API** - Minimal code to get started with RAG
 - 🔌 **Built-in Connectors** - Native support for Qdrant, Pinecone, and more
 - ⚡ **Fast Setup** - From zero to RAG in minutes
@@ -248,7 +248,7 @@ text = """This is the first sentence. This is the second sentence.
 And here's a third one with some additional context."""
 chunks = chunker.chunk(text)
 
-# Vizulize the results
+# Visualize the results
 viz = Visualizer()
 viz(chunks)
 ```
@@ -282,9 +282,9 @@ layout: two-cols
 layoutClass: 'gap-2'
 ---
 
-# chonkie + Qdrant Integration
+# Chonkie + Qdrant Integration
 
-Integrating chonkie with Qdrant is as simple as one import:
+Integrating Chonkie with Qdrant is as simple as one import:
 
 ```python
 from chonkie import QdrantHandshake
@@ -302,7 +302,7 @@ from chonkie import QdrantHandshake
 The `QdrantHandshake` handles all the complexity:
 
 - ✅ Automatic collection management
-- ✅ Seamless embedding and vectore store management
+- ✅ Seamless embedding and vector store management
 - ✅ Retrieval and storage made easy
 
 </div>
@@ -355,7 +355,7 @@ Chonkie is now featured on the Qdrant Integrations page!
 
 <div class="text-sm opacity-75">
 
-Also checkout out these awesome resources:
+Also check out these awesome resources:
 
 <div class="mt-4 space-y-4">
   <div v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 200 } }">
@@ -382,7 +382,7 @@ Also checkout out these awesome resources:
       <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" class="w-10 h-10" />
       <div>
         <div class="font-semibold text-blue-500">Google Colab</div>
-        <div class="text-xs opacity-60">Chonkie + Qdrant Agentic Rag example</div>
+        <div class="text-xs opacity-60">Chonkie + Qdrant Agentic RAG example</div>
       </div>
     </a>
   </div>
@@ -409,7 +409,7 @@ h1 {
 </style>
 
 ---
-transition: slide-up
+transition: slide-left
 layout: two-cols
 layoutClass: 'gap-16'
 --- 
@@ -459,6 +459,83 @@ h1 {
 transition: slide-up
 layout: two-cols
 layoutClass: 'gap-16'
+--- 
+
+# Chefs And Data Preparation
+<br/>
+Chefs are components that can be used to process data and later pass them to a chunker.
+<img src="https://github.com/chonkie-inc/chonkie/blob/main/assets/chomp-transparent-bg.png?raw=true" class="w-full rounded-lg shadow-xl" />
+<br/>
+
+<img src="/markdown_chef.png" class="w-full rounded-lg shadow-xl scale-110" />
+
+::right::
+
+```python {*}{maxHeight:'400px'}
+from chonkie import MarkdownChef, RecursiveChunker, TableChunker, QdrantHandshake
+
+# Initialize components
+chef = MarkdownChef()
+handshake = QdrantHandshake()
+text_chunker = RecursiveChunker(chunk_size=512)
+table_chunker = TableChunker(tokenizer="row", chunk_size=3)
+
+# Process markdown file
+doc = chef.process("README.md")
+
+all_chunks = []
+
+# Chunk text content
+for chunk in doc.chunks:
+    text_chunks = text_chunker.chunk(chunk.text)
+    for tc in text_chunks:
+        tc.metadata = {"content_type": "text"}
+    all_chunks.extend(text_chunks)
+
+# Chunk code blocks
+for code_block in doc.code:
+    code_chunks = text_chunker.chunk(code_block.content)
+    for cc in code_chunks:
+        cc.metadata = {"content_type": "code", "language": code_block.language}
+    all_chunks.extend(code_chunks)
+
+# Chunk tables
+for table in doc.tables:
+    table_chunks = table_chunker.chunk(table.content)
+    for tb in table_chunks:
+        tb.metadata = {"content_type": "table"}
+    all_chunks.extend(table_chunks)
+
+# Store in Qdrant
+handshake.write(all_chunks)
+
+# Search
+results = handshake.search("your query", limit=5)
+print(results)
+```
+
+<style>
+h1 {
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
+}
+</style>
+
+---
+transition: slide-up
+layout: two-cols
+layoutClass: 'gap-16'
 ---
 
 # Our Growth Journey
@@ -468,8 +545,8 @@ Chonkie has seen incredible adoption since launch
 ## Community Highlights
 
 - <span v-mark.underline.blue="2">3500+</span> GitHub stars
-- ~300 Repositories Depend on chonkie
-- 1.700.000+ PyPI downloads
+- ~300 repositories depend on Chonkie
+- 1,700,000+ PyPI downloads
 - YC backed startup 🦛
 
 <div v-click="3" class="mt-8">
@@ -612,14 +689,14 @@ Memchunk is our latest and fastest chunking library, built for performance and s
 
 <div class="mt-4 text-[10px] opacity-90 border border-white/10 rounded-lg p-2 bg-white/5">
 
-| library | throughput | vs memchunk |
+| Library | Throughput | vs. Memchunk |
 | :--- | :--- | :--- |
-| **memchunk** | **164 GB/s** | - |
-| kiru | 4.5 GB/s | 36x slower |
-| langchain | 0.35 GB/s | 469x slower |
-| semchunk | 0.013 GB/s | 12,615x slower |
-| llama-index | 0.0035 GB/s | 46,857x slower |
-| text-splitter | 0.0017 GB/s | 96,471x slower |
+| **Memchunk** | **164 GB/s** | - |
+| Kiru | 4.5 GB/s | 36x slower |
+| LangChain | 0.35 GB/s | 469x slower |
+| Semchunk | 0.013 GB/s | 12,615x slower |
+| LlamaIndex | 0.0035 GB/s | 46,857x slower |
+| Text-splitter | 0.0017 GB/s | 96,471x slower |
 
 </div>
 
