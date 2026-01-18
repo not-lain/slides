@@ -32,11 +32,7 @@ duration: 20min
     -45deg,
     #050510,
     #0a0a2e,
-    #3c1e5a,
-    #5d1033,
-    #1a0a2d,
-    #3c1e5a,
-    #0a0a2e
+    #1b1b1b,
   );
   background-size: 400% 400%;
   animation: neon-gradient 20s ease infinite;
@@ -339,7 +335,7 @@ Also check out these awesome resources:
 
   <div v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 400 } }">
     <a href="https://docs.chonkie.ai/oss/handshakes/qdrant-handshake" target="_blank" class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 hover:shadow-lg transition-all transform hover:scale-105">
-      <img src="https://www.chonkie.ai/chonkies/chonkie_icon.svg" alt="Chonkie" class="w-10 h-10" />
+      <img src="/chonkie_icon.png" alt="Chonkie" class="w-10 h-10" />
       <div>
         <div class="font-semibold text-blue-500">Chonkie Docs</div>
         <div class="text-xs opacity-60">Qdrant Handshake Guide</div>
@@ -478,69 +474,6 @@ h1 {
 </style>
 
 ---
-transition: slide-up
-layout: two-cols
-layoutClass: 'gap-16'
----
-
-# Our Growth Journey
-
-Chonkie has seen incredible adoption since launch
-
-## Community Highlights
-
-- <span v-mark.underline.blue="2">3500+</span> GitHub stars
-- ~300 repositories depend on Chonkie
-- 1,700,000+ PyPI downloads
-- YC backed startup 🦛
-
-<div v-click="3" class="mt-8">
-
-### Join Our Community
-
-<div class="flex gap-4 mt-4">
-  <a
-    href="https://github.com/chonkie-inc/chonkie"
-    target="_blank"
-    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
-  >
-    Star on GitHub
-  </a>
-  <a
-    href="https://discord.com/invite/Q6zkP8w6ur"
-    target="_blank"
-    class="px-4 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors"
-  >
-    Join Discord
-  </a>
-</div>
-
-</div>
-
-::right::
-
-<div v-click="1" v-motion :initial="{ x: 100, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { duration: 800 } }">
-
-<!-- <GithubStats /> -->
-<div class="flex justify-center mb-4">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/chonkie-inc/chonkie">
-</div>
-
-<StarHistory repo="chonkie-inc/chonkie" />
-
-</div>
-
-<style>
-h1 {
-  background: linear-gradient(45deg, #FF9800, #F44336);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
-}
-
-</style>
-
----
 transition: slide-right
 layout: two-cols
 layoutClass: gap-0
@@ -659,6 +592,69 @@ print(f"Total chunks: {len(chunks)}")
     alt="Memchunk Benchmark"
     class="max-w-xs rounded-lg shadow-lg"
   />
+</div>
+
+<style>
+h1 {
+  background: linear-gradient(45deg, #FF9800, #F44336);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+}
+
+</style>
+
+---
+transition: slide-up
+layout: two-cols
+layoutClass: 'gap-16'
+---
+
+# Our Growth Journey
+
+Chonkie has seen incredible adoption since launch
+
+## Community Highlights
+
+- <span v-mark.underline.blue="2">3500+</span> GitHub stars
+- ~300 repositories depend on Chonkie
+- 1,700,000+ PyPI downloads
+- YC backed startup 🦛
+
+<div v-click="3" class="mt-8">
+
+### Join Our Community
+
+<div class="flex gap-4 mt-4">
+  <a
+    href="https://github.com/chonkie-inc/chonkie"
+    target="_blank"
+    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+  >
+    Star on GitHub
+  </a>
+  <a
+    href="https://discord.com/invite/Q6zkP8w6ur"
+    target="_blank"
+    class="px-4 py-2 border border-blue-500 text-blue-500 rounded-lg hover:bg-blue-50 transition-colors"
+  >
+    Join Discord
+  </a>
+</div>
+
+</div>
+
+::right::
+
+<div v-click="1" v-motion :initial="{ x: 100, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { duration: 800 } }">
+
+<!-- <GithubStats /> -->
+<div class="flex justify-center mb-4">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/chonkie-inc/chonkie">
+</div>
+
+<StarHistory repo="chonkie-inc/chonkie" />
+
 </div>
 
 <style>
