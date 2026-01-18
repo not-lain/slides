@@ -672,3 +672,53 @@ h1 {
   background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
+
+---
+layout: center
+class: text-center
+---
+
+<style scoped>
+.slidev-layout {
+  background-image: url(/orbit.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+</style>
+
+# Thank You!
+
+<div class="mt-12 text-2xl opacity-90">
+  Thanks for your attention!
+</div>
+
+<div class="mt-8 flex justify-center gap-8">
+  <div class="flex flex-col items-center">
+    <div class="text-sm opacity-60 mb-2">Documentation</div>
+    <a href="https://docs.chonkie.ai/" target="_blank" class="font-bold text-emerald-400 hover:underline">docs.chonkie.ai</a>
+  </div>
+  <div class="flex flex-col items-center">
+    <div class="text-sm opacity-60 mb-2">Website</div>
+    <a href="https://chonkie.ai" target="_blank" class="font-bold text-blue-400 hover:underline">chonkie.ai</a>
+  </div>
+  <div class="flex flex-col items-center">
+    <div class="text-sm opacity-60 mb-2">GitHub</div>
+    <a href="https://github.com/chonkie-inc/chonkie" target="_blank" class="font-bold text-purple-400 hover:underline">chonkie-inc/chonkie</a>
+  </div>
+</div>
+
+<style>
+h1 {
+  font-size: 5rem !important;
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.4));
+}
+</style>
