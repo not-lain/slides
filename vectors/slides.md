@@ -30,15 +30,16 @@ duration: 20min
 .slidev-layout {
   background: linear-gradient(
     -45deg,
-    #0a0a1a,
-    #1a0a15,
-    #2d1033,
+    #050510,
+    #0a0a2e,
+    #3c1e5a,
+    #5d1033,
     #1a0a2d,
-    #150a1a,
-    #1a0a15
+    #3c1e5a,
+    #0a0a2e
   );
   background-size: 400% 400%;
-  animation: neon-gradient 15s ease infinite;
+  animation: neon-gradient 20s ease infinite;
 }
 </style>
 
@@ -168,9 +169,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -212,9 +210,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -255,9 +250,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 
@@ -305,9 +297,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -378,9 +367,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -420,9 +406,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -492,9 +475,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -558,9 +538,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -627,9 +604,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
@@ -695,9 +669,6 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
-.slidev-layout {
-  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
-}
 </style>
 
 ---
