@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://qdrant.tech/img/hero-home-illustration-x2.webp
+background: https://github.com/not-lain/slides/blob/main/vectors/public/orbit.png?raw=true
 title: Welcome to Slidev
 info: |
   ## Chonkie and qdrant
