@@ -11,7 +11,6 @@ class: text-center
 drawings:
   persist: false
 transition: slide-left
-mdc: true
 duration: 20min
 ---
 
@@ -161,28 +160,28 @@ We are a team of 3 dedicated engineers.
   Find us at <a href="https://chonkie.ai" target="_blank" class="font-bold text-blue-500 hover:underline">chonkie.ai</a>
 </div>
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
 ---
 transition: slide-up
 level: 2
+layout: two-cols
 ---
 
 # chonkie
@@ -204,22 +203,34 @@ chonkie (not to be confused with Chonkie the company name) is an open-source lib
 
 </div>
 
+::right::
+
+<div class="flex items-center justify-center h-full">
+  <img src="/chonkie_ecosystem.png" alt="Chonkie Ecosystem" class="w-80 object-contain shadow-xl rounded-lg" v-motion :initial="{ x: 100, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { duration: 800 } }"/>
+</div>
+
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
 ---
 transition: slide-left
+layout: two-cols
+layoutClass: 'gap-2'
 ---
 
 # Try Chonkie!
@@ -242,23 +253,33 @@ viz = Visualizer()
 viz(chunks)
 ```
 
+::right::
+
+<img src="/terminal_output.png" alt="Code 1" class="w-full h-full object-contain" />
+
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
 
 ---
 transition: slide-left
+layout: two-cols
+layoutClass: 'gap-2'
 ---
 
 # chonkie + Qdrant Integration
@@ -278,8 +299,6 @@ from chonkie import QdrantHandshake
   class="mt-8"
 >
 
-### That's it!
-
 The `QdrantHandshake` handles all the complexity:
 
 - ✅ Automatic collection management
@@ -289,68 +308,32 @@ The `QdrantHandshake` handles all the complexity:
 </div>
 </v-clicks>
 
+::right::
+
+<img src="/qdrant _code_snippet.png" alt="Code 1" class="w-full h-full object-contain" />
+
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
 }
-</style>
 
----
-transition: slide-up
----
-
-# QdrantHandshake in Action
-
-<div class="mt-6">
-
-```python
-# Complete workflow with search
-from chonkie import QdrantHandshake, RecursiveChunker
-
-handshake = QdrantHandshake(
-    url="YOUR_CLOUD_URL",
-    api_key="YOUR_API_KEY",
-    collection_name="YOUR_COLLECTION_NAME_OR_CREATE_NEW",
-)
-
-chunker = RecursiveChunker()
-chunks = chunker.chunk("your large document text here...")
-
-handshake.write(chunks)
-
-# Retrieve relevant chunks
-query = "What is chonkie?"
-results = handshake.search(query, limit=5)
-```
-
-</div>
-
-<style>
-h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
 ---
 transition: slide-right
 layout: two-cols
-layoutClass: gap-16
+layoutClass: 'gap-16'
 ---
 
 # We're Official! 🎉
@@ -409,22 +392,26 @@ Also checkout out these awesome resources:
 
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
 ---
 transition: slide-up
 layout: two-cols
-layoutClass: gap-16
+layoutClass: 'gap-16'
 ---
 
 # Our Growth Journey
@@ -466,6 +453,9 @@ Chonkie has seen incredible adoption since launch
 <div v-click="1" v-motion :initial="{ x: 100, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { duration: 800 } }">
 
 <!-- <GithubStats /> -->
+<div class="flex justify-center mb-4">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/chonkie-inc/chonkie">
+</div>
 
 <StarHistory repo="chonkie-inc/chonkie" />
 
@@ -473,15 +463,19 @@ Chonkie has seen incredible adoption since launch
 
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
@@ -543,15 +537,19 @@ print(f"✓ {response.usage.tokens} tokens")
 
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
 
@@ -612,14 +610,18 @@ print(f"Total chunks: {len(chunks)}")
 
 <style>
 h1 {
-  background-color: #DC244C;
-  background-image: linear-gradient(45deg, #DC244C 10%, #b3358f 30%, #9742c4 60%, #8547FF 90%);
+  background-color: #FFD700;
+  background-image: linear-gradient(45deg, #FFD700 10%, #FFCC00 30%, #FFA500 60%, #FF8C00 90%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(220, 36, 76, 0.5), 0 0 40px rgba(133, 71, 255, 0.3);
-  filter: drop-shadow(0 0 10px rgba(220, 36, 76, 0.6));
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.4), 0 0 40px rgba(255, 165, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.slidev-layout {
+  background: linear-gradient(135deg, #05070a 0%, #0d0f23 50%, #1a0a2d 100%);
 }
 </style>
