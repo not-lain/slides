@@ -3,10 +3,9 @@ theme: seriph
 background: https://github.com/not-lain/slides/blob/main/vectors/public/orbit.png?raw=true
 title: Welcome to Slidev
 info: |
-  ## Chonkie and Qdrant
-  Vector Search and Python Runner.
+  ## Chonkie and Qdrant Vector Search
 
-  Learn more at [chonkie.ai](https://chonkie.ai)
+  Learn more at chonkie.ai/blogs
 class: text-center
 drawings:
   persist: false
@@ -681,7 +680,7 @@ pip install llama-index-embeddings-autoembeddings
 ```
 
 <div class="mt-4 flex justify-center">
-  <a href="https://www.chonkie.ai/blogs/chonkie-llamaindex-integration" target="_blank">
+  <a href="https://www.chonkie.ai/blog/chonkie-llamaindex-integration" target="_blank">
     <img
       src="https://www.chonkie.ai/blogs/chonkie-llamaindex-integration/chonkie-llamaindex.png"
       alt="Chonkie × LlamaIndex Blog"
