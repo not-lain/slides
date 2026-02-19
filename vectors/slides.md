@@ -14,30 +14,7 @@ transition: slide-left
 duration: 20min
 ---
 
-<style>
-@keyframes neon-gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
-.slidev-layout {
-  background: linear-gradient(
-    -45deg,
-    #050510,
-    #0a0a2e,
-    #1b1b1b,
-  );
-  background-size: 400% 400%;
-  animation: neon-gradient 20s ease infinite;
-}
-</style>
 
 <div
   v-motion
@@ -181,14 +158,11 @@ Chonkie (not to be confused with the company name) is an open-source library for
 
 ## Why Chonkie?
 
-<v-clicks>
 
 - 🚀 **Easy Integration** - Works seamlessly with popular vector databases
 - 📦 **Simple API** - Minimal code to get started with RAG
 - 🔌 **Built-in Connectors** - Native support for Qdrant, Pinecone, and more
 - ⚡ **Fast Setup** - From zero to RAG in minutes
-
-</v-clicks>
 
 </div>
 
@@ -325,7 +299,7 @@ Also check out these awesome resources:
 <div class="mt-4 space-y-4">
   <div v-motion :initial="{ x: -50, opacity: 0 }" :enter="{ x: 0, opacity: 1, transition: { delay: 200 } }">
     <a href="https://cookbook.openai.com/examples/partners/temporal_agents_with_knowledge_graphs/temporal_agents" target="_blank" class="flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 hover:shadow-lg transition-all transform hover:scale-105">
-      <img src="https://www.svgrepo.com/show/306500/openai.svg" alt="OpenAI" class="w-10 h-10" />
+      <img src="https://assets.streamlinehq.com/image/private/w_240,h_240,ar_1/f_auto/v1/icons/technology/openai_1-moa3pqsiii7l4dkheifi8.png/openai_1-gv7rd0u7lcncyfalyjodt.png" alt="OpenAI" class="w-10 h-10" />
       <div>
         <div class="font-semibold text-blue-500">OpenAI Cookbook</div>
         <div class="text-xs opacity-60">Temporal Agents Example</div>
@@ -616,9 +590,9 @@ Chonkie has seen incredible adoption since launch
 
 ## Community Highlights
 
-- <span v-mark.underline.blue="2">3500+</span> GitHub stars
+- <span v-mark.underline.blue="2">3800+</span> GitHub stars
 - ~300 repositories depend on Chonkie
-- 1,700,000+ PyPI downloads
+- 2,100,000+ PyPI downloads
 - YC backed startup 🦛
 
 <div v-click="3" class="mt-8">
@@ -665,6 +639,65 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
 }
 
+</style>
+---
+transition: slide-down
+layout: two-cols
+layoutClass: 'gap-8'
+---
+
+# Chonkie × LlamaIndex
+
+Two native integrations — no glue code needed.
+
+<div class="mt-3">
+
+
+<div class="mb-3 p-2 border border-blue-400/30 rounded-lg bg-white/5 text-sm">
+
+**📦 Chunker Node Parser** — `llama-index-node-parser-chonkie`
+
+Wraps Chonkie chunkers behind LlamaIndex's `NodeParser` interface. Every chunking strategy, zero boilerplate.
+
+</div>
+
+<div class="p-2 border border-green-400/30 rounded-lg bg-white/5 text-sm">
+
+**🔗 AutoEmbeddings** — `llama-index-embeddings-autoembeddings`
+
+Drop-in `BaseEmbedding` that auto-detects the right backend (local or cloud) from a model name string.
+
+</div>
+
+</div>
+
+::right::
+
+
+
+```bash
+pip install llama-index-node-parser-chonkie
+pip install llama-index-embeddings-autoembeddings
+```
+
+<div class="mt-4 flex justify-center">
+  <a href="https://www.chonkie.ai/blogs/chonkie-llamaindex-integration" target="_blank">
+    <img
+      src="https://www.chonkie.ai/blogs/chonkie-llamaindex-integration/chonkie-llamaindex.png"
+      alt="Chonkie × LlamaIndex Blog"
+      class="w-full max-w-md border-2 border-green-400 rounded-lg hover:opacity-90 transition-opacity cursor-pointer"
+      title="Read the Chonkie × LlamaIndex Integration Blog"
+    />
+  </a>
+</div>
+
+<style>
+h1 {
+  background: linear-gradient(45deg, #FF9800, #F44336);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(255, 152, 0, 0.5);
+}
 </style>
 
 ---
