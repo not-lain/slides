@@ -691,6 +691,17 @@ pip install llama-index-embeddings-autoembeddings
   </a>
 </div>
 
+<div class="mt-4 flex justify-center">
+  <a href="https://colab.research.google.com/github/chonkie-inc/cookbook/blob/main/tutorials/chonkieXllamaindex.ipynb" target="_blank" class="w-full max-w-md flex items-center gap-3 p-3 border border-gray-300 rounded-lg hover:bg-gray-100 hover:shadow-lg transition-all transform hover:scale-105">
+    <img src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" class="w-10 h-10" />
+    <div>
+      <div class="font-semibold text-blue-500">Google Colab</div>
+      <div class="text-xs opacity-60">Chonkie × LlamaIndex notebook</div>
+    </div>
+  </a>
+</div>
+Shout out to <a href="https://github.com/astraBert/" target="_blank" class="text-blue-500">Clelia</a> for the LlamaIndex integrations and to <a href="https://github.com/samyak1729" target="_blank" class="text-blue-500">samyak</a> for the amazing colab notebook!
+
 <style>
 h1 {
   background: linear-gradient(45deg, #FF9800, #F44336);
