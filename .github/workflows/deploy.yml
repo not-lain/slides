@@ -29,11 +29,11 @@ jobs:
         run: npm i -g @antfu/ni
 
       - name: Install dependencies
-        working-directory: vectors
+        working-directory: qdrant
         run: nci
 
       - name: Build
-        working-directory: vectors
+        working-directory: qdrant
         run: nr build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
@@ -41,7 +41,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: vectors/dist
+          path: qdrant/dist
 
   deploy:
     environment:

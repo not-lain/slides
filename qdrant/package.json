@@ -1,5 +1,5 @@
 {
-  "name": "vectors",
+  "name": "qdrant",
   "type": "module",
   "private": true,
   "scripts": {
